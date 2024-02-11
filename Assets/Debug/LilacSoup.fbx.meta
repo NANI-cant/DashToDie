@@ -1,0 +1,1535 @@
+fileFormatVersion: 2
+guid: f0fecd3227729f94d882d398ef629f26
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LilacMAT01
+    second: {fileID: 2100000, guid: ee75d918ce7c9614893421c56133e2a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LilacMAT02
+    second: {fileID: 2100000, guid: f496b1204a9f2ab478c1f65abcb5f9f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LilacMAT03
+    second: {fileID: 2100000, guid: 6218caff7e46f914ab6accac3a22d9cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sword
+    second: {fileID: 2100000, guid: 0d9f1627b840b6e4faff1f9ed360c896, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Lilac_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LilacHairJoint004
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LilacHairJoint026
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LilacHairJoint001
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lilac_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: LilacSoup(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHair
+      parentName: LilacSoup(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacFace
+      parentName: LilacSoup(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacBody
+      parentName: LilacSoup(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSword
+      parentName: LilacSoup(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Reference
+      parentName: LilacSoup(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Hips
+      parentName: Lilac_Reference
+      position: {x: -0, y: 0.8448272, z: 0.01475065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftUpLeg
+      parentName: Lilac_Hips
+      position: {x: -0.08153209, y: -0.03165449, z: -0.0034039966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftLeg
+      parentName: Lilac_LeftUpLeg
+      position: {x: -0, y: -0.33791906, z: 0.012100012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftFoot
+      parentName: Lilac_LeftLeg
+      position: {x: -2.2204466e-17, y: -0.35227254, z: -0.012100012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftToeBase
+      parentName: Lilac_LeftFoot
+      position: {x: -0.000000077112325, y: -0.08822636, z: 0.11854379}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightUpLeg
+      parentName: Lilac_Hips
+      position: {x: 0.08153209, y: -0.03165449, z: -0.0034039966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightLeg
+      parentName: Lilac_RightUpLeg
+      position: {x: -0, y: -0.33791906, z: 0.012100012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightFoot
+      parentName: Lilac_RightLeg
+      position: {x: 2.2204466e-17, y: -0.35227254, z: -0.012100012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightToeBase
+      parentName: Lilac_RightFoot
+      position: {x: 0.000000077112325, y: -0.08822636, z: 0.11854379}
+      rotation: {x: 0, y: -0.00004189127, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Spine
+      parentName: Lilac_Hips
+      position: {x: -0, y: 0.12748161, z: 0.023827972}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Spine1
+      parentName: Lilac_Spine
+      position: {x: -0, y: 0.14372556, z: -0.0075029824}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SwordJointROOT
+      parentName: Lilac_Spine1
+      position: {x: -0, y: 0.08714257, z: -0.14608179}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSwordJoint
+      parentName: SwordJointROOT
+      position: {x: 0.43920007, y: 0.22501056, z: 0.01881404}
+      rotation: {x: 0, y: -0, z: -0.4600366, w: 0.88789994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftShoulder
+      parentName: Lilac_Spine1
+      position: {x: -0.08735934, y: 0.08893692, z: -0.031075634}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftArm
+      parentName: Lilac_LeftShoulder
+      position: {x: -0.0378694, y: -0.0031697638, z: 0}
+      rotation: {x: 0, y: 0, z: 0.000006416546, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftForeArm
+      parentName: Lilac_LeftArm
+      position: {x: -0.17778903, y: 0.000002281583, z: 0}
+      rotation: {x: 0, y: -0, z: -0.00017324674, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHand
+      parentName: Lilac_LeftForeArm
+      position: {x: -0.20413835, y: -0.00006811289, z: 0}
+      rotation: {x: 0, y: 0, z: 0.002252206, w: 0.9999975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandThumb1
+      parentName: Lilac_LeftHand
+      position: {x: -0.030030321, y: -0.02958816, z: 0.016146678}
+      rotation: {x: -0.07474613, y: 0.23369505, z: 0.18798941, w: 0.9510309}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandThumb2
+      parentName: Lilac_LeftHandThumb1
+      position: {x: -0.043472238, y: 0.003803184, z: 0.01314437}
+      rotation: {x: 0.008247566, y: 0.15802304, z: -0.06359924, w: 0.98535067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandThumb3
+      parentName: Lilac_LeftHandThumb2
+      position: {x: -0.020675866, y: -0.0004650394, z: -0.0017937623}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandIndex1
+      parentName: Lilac_LeftHand
+      position: {x: -0.092172414, y: -0.0068566077, z: 0.028772002}
+      rotation: {x: -0.0054590735, y: 0.017600188, z: -0.08407327, w: 0.9962892}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandIndex2
+      parentName: Lilac_LeftHandIndex1
+      position: {x: -0.03063248, y: -0.0116720125, z: 0.0012858474}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandIndex3
+      parentName: Lilac_LeftHandIndex2
+      position: {x: -0.018562002, y: -0.008014884, z: 0.0005504397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandMiddle1
+      parentName: Lilac_LeftHand
+      position: {x: -0.09218652, y: -0.0034149943, z: 0.0074242735}
+      rotation: {x: -0.0061947824, y: 0.015979579, z: -0.06956991, w: 0.99742985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandMiddle2
+      parentName: Lilac_LeftHandMiddle1
+      position: {x: -0.03729361, y: -0.012848589, z: 0.00036954504}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandMiddle3
+      parentName: Lilac_LeftHandMiddle2
+      position: {x: -0.019996257, y: -0.007880423, z: -0.00006485954}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandRing1
+      parentName: Lilac_LeftHand
+      position: {x: -0.089863464, y: -0.0073953415, z: -0.013240899}
+      rotation: {x: -0.008554927, y: 0.00025905293, z: -0.06681047, w: 0.99772894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandRing2
+      parentName: Lilac_LeftHandRing1
+      position: {x: -0.034279093, y: -0.011194972, z: 0.0003207305}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandRing3
+      parentName: Lilac_LeftHandRing2
+      position: {x: -0.018625129, y: -0.007171298, z: 0.0004172888}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandPinky1
+      parentName: Lilac_LeftHand
+      position: {x: -0.084898725, y: -0.01723631, z: -0.031372163}
+      rotation: {x: -0.015868826, y: -0.01318161, z: -0.08249398, w: 0.99637806}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandPinky2
+      parentName: Lilac_LeftHandPinky1
+      position: {x: -0.024542917, y: -0.008226884, z: 0.00001361803}
+      rotation: {x: 0.00022174505, y: -0.00066866336, z: -0.0043104626, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_LeftHandPinky3
+      parentName: Lilac_LeftHandPinky2
+      position: {x: -0.013748837, y: -0.006035749, z: 0.00022902209}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightShoulder
+      parentName: Lilac_Spine1
+      position: {x: 0.08735934, y: 0.08893692, z: -0.031075634}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightArm
+      parentName: Lilac_RightShoulder
+      position: {x: 0.037900005, y: -0.0031697638, z: 0}
+      rotation: {x: 0, y: -0, z: -0.000020231517, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightForeArm
+      parentName: Lilac_RightArm
+      position: {x: 0.17780001, y: 0.0000071971413, z: 0}
+      rotation: {x: 0, y: 0, z: 0.00054625096, w: 0.9999999}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHand
+      parentName: Lilac_RightForeArm
+      position: {x: 0.20492628, y: -0.00021559055, z: 0}
+      rotation: {x: 0, y: -0, z: -0.0071012024, w: 0.9999748}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandThumb1
+      parentName: Lilac_RightHand
+      position: {x: 0.029735873, y: -0.029339135, z: 0.016146678}
+      rotation: {x: -0.074379645, y: -0.23420487, z: -0.18813767, w: 0.95090485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandThumb2
+      parentName: Lilac_RightHandThumb1
+      position: {x: 0.04342685, y: 0.0041102185, z: 0.0131637305}
+      rotation: {x: 0.009851626, y: -0.15784626, z: 0.06295082, w: 0.98540586}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandThumb3
+      parentName: Lilac_RightHandThumb2
+      position: {x: 0.02068052, y: -0.00028480205, z: -0.0017776883}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandIndex1
+      parentName: Lilac_RightHand
+      position: {x: 0.09053946, y: -0.006050895, z: 0.028772002}
+      rotation: {x: -0.0055243853, y: -0.017916545, z: 0.083790675, w: 0.99630696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandIndex2
+      parentName: Lilac_RightHandIndex1
+      position: {x: 0.030735994, y: -0.011396992, z: 0.0012825958}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandIndex3
+      parentName: Lilac_RightHandIndex2
+      position: {x: 0.018633183, y: -0.007848129, z: 0.0005481943}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandMiddle1
+      parentName: Lilac_RightHand
+      position: {x: 0.091012955, y: -0.002602846, z: 0.0074242735}
+      rotation: {x: -0.0062105292, y: -0.016360996, z: 0.070397995, w: 0.99736553}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandMiddle2
+      parentName: Lilac_RightHandMiddle1
+      position: {x: 0.03716233, y: -0.012516412, z: 0.00036954504}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandMiddle3
+      parentName: Lilac_RightHandMiddle2
+      position: {x: 0.02006622, y: -0.0077005466, z: -0.00006485954}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandRing1
+      parentName: Lilac_RightHand
+      position: {x: 0.08823543, y: -0.0066103404, z: -0.013240899}
+      rotation: {x: -0.008359448, y: -0.00054979435, z: 0.06666926, w: 0.99774003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandRing2
+      parentName: Lilac_RightHandRing1
+      position: {x: 0.03437806, y: -0.010887097, z: 0.00032695226}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandRing3
+      parentName: Lilac_RightHandRing2
+      position: {x: 0.018688655, y: -0.0070038433, z: 0.000421261}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandPinky1
+      parentName: Lilac_RightHand
+      position: {x: 0.08335926, y: -0.016495494, z: -0.031372163}
+      rotation: {x: -0.015385704, y: 0.0127747245, z: 0.08241849, w: 0.99639714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandPinky2
+      parentName: Lilac_RightHandPinky1
+      position: {x: 0.024614878, y: -0.008008985, z: 0.00002510228}
+      rotation: {x: 0.00021582097, y: 0.00067681633, z: 0.004309872, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_RightHandPinky3
+      parentName: Lilac_RightHandPinky2
+      position: {x: 0.013801798, y: -0.0059133065, z: 0.00023750478}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Neck
+      parentName: Lilac_Spine1
+      position: {x: -0, y: 0.14372556, z: -0.031075634}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lilac_Head
+      parentName: Lilac_Neck
+      position: {x: -0, y: 0.04549718, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairROOT
+      parentName: Lilac_Head
+      position: {x: -0, y: 0.23259224, z: -0.034357786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint016
+      parentName: LilacHairROOT
+      position: {x: -0.20311588, y: -0.071784385, z: -0.12317551}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint017
+      parentName: LilacHairJoint016
+      position: {x: -0.03238154, y: 0.002370167, z: -0.016741827}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint018
+      parentName: LilacHairJoint017
+      position: {x: -0.032164097, y: -0.009768225, z: -0.0019377813}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint019
+      parentName: LilacHairJoint018
+      position: {x: -0.028279018, y: -0.0014490248, z: 0.016231513}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint020
+      parentName: LilacHairJoint019
+      position: {x: -0.032380015, y: 0.0071693305, z: 0.022704279}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint021
+      parentName: LilacHairJoint020
+      position: {x: -0.03058615, y: 0.017170765, z: 0.0047015343}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint022
+      parentName: LilacHairJoint021
+      position: {x: -0.04142037, y: 0.03090878, z: -0.026666872}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint023
+      parentName: LilacHairJoint022
+      position: {x: -0.044221874, y: 0.008912874, z: -0.035555486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint024
+      parentName: LilacHairJoint023
+      position: {x: -0.044221874, y: -0.02442112, z: -0.01067092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint025
+      parentName: LilacHairJoint024
+      position: {x: -0.04422179, y: -0.028537847, z: 0.01086106}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint001
+      parentName: LilacHairROOT
+      position: {x: -0.002448661, y: -0.03760623, z: 0.16970259}
+      rotation: {x: 0.4939164, y: 0.50601053, z: 0.4939164, w: 0.50601053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint002
+      parentName: LilacHairJoint001
+      position: {x: -0.03130612, y: 0.0024857617, z: -0.005175574}
+      rotation: {x: 0, y: 0, z: 0.01209412, w: 0.99992687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint003
+      parentName: LilacHairJoint002
+      position: {x: -0.030228905, y: -0.003821493, z: -0.0078063346}
+      rotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint004
+      parentName: LilacHairROOT
+      position: {x: -0.12837212, y: -0.13988954, z: 0.10550464}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint005
+      parentName: LilacHairJoint004
+      position: {x: -0.027330877, y: -0.010958603, z: 0.0013704897}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint006
+      parentName: LilacHairJoint005
+      position: {x: -0.023888111, y: -0.019855363, z: 0.008310361}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint007
+      parentName: LilacHairJoint006
+      position: {x: -0.011588289, y: -0.021339111, z: 0.010664161}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint012
+      parentName: LilacHairROOT
+      position: {x: -0.15556209, y: -0.037704267, z: 0.037530135}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint013
+      parentName: LilacHairJoint012
+      position: {x: -0.031084636, y: 0.008337404, z: -0.004361749}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint014
+      parentName: LilacHairJoint013
+      position: {x: -0.036484532, y: 0.0039802794, z: -0.0147340465}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint015
+      parentName: LilacHairJoint014
+      position: {x: -0.042994495, y: -0.0015807274, z: -0.031104745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint026
+      parentName: LilacHairROOT
+      position: {x: 0.128372, y: -0.13988943, z: 0.10550468}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint027
+      parentName: LilacHairJoint026
+      position: {x: 0.027330004, y: 0.010958, z: -0.0013704002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint028
+      parentName: LilacHairJoint027
+      position: {x: 0.02389, y: 0.019855902, z: -0.0083104}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint029
+      parentName: LilacHairJoint028
+      position: {x: 0.011589999, y: 0.021339105, z: -0.010664201}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint008
+      parentName: LilacHairROOT
+      position: {x: -0.14345069, y: -0.14854324, z: 0.041459616}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint009
+      parentName: LilacHairJoint008
+      position: {x: -0.034576703, y: -0.009624194, z: 0.0027677156}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint010
+      parentName: LilacHairJoint009
+      position: {x: -0.034576897, y: -0.012125669, z: 0.009807842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint011
+      parentName: LilacHairJoint010
+      position: {x: -0.025898173, y: -0.00021648408, z: 0.01613736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint030
+      parentName: LilacHairROOT
+      position: {x: 0.14345099, y: -0.14853942, z: 0.041459616}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint031
+      parentName: LilacHairJoint030
+      position: {x: 0.034580007, y: 0.009625, z: -0.0027677098}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint032
+      parentName: LilacHairJoint031
+      position: {x: 0.034580007, y: 0.012125001, z: -0.009807861}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint033
+      parentName: LilacHairJoint032
+      position: {x: 0.0259, y: 0.00021699998, z: -0.016137304}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint034
+      parentName: LilacHairROOT
+      position: {x: 0.15556201, y: -0.037699416, z: 0.037530135}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint035
+      parentName: LilacHairJoint034
+      position: {x: 0.03109, y: -0.008336999, z: 0.00436175}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint036
+      parentName: LilacHairJoint035
+      position: {x: 0.03648, y: -0.0039810003, z: 0.014734002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint037
+      parentName: LilacHairJoint036
+      position: {x: 0.04300001, y: 0.0015810003, z: 0.031104797}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint038
+      parentName: LilacHairROOT
+      position: {x: 0.20311604, y: -0.07177942, z: -0.12317523}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint039
+      parentName: LilacHairJoint038
+      position: {x: 0.032390006, y: -0.00237, z: 0.016742002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint040
+      parentName: LilacHairJoint039
+      position: {x: 0.03216, y: 0.009768003, z: 0.0019380002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint041
+      parentName: LilacHairJoint040
+      position: {x: 0.02828, y: 0.001449, z: -0.016232003}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint042
+      parentName: LilacHairJoint041
+      position: {x: 0.03238, y: -0.007169001, z: -0.022704002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint043
+      parentName: LilacHairJoint042
+      position: {x: 0.030590005, y: -0.017171, z: -0.004701}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint044
+      parentName: LilacHairJoint043
+      position: {x: 0.041419998, y: -0.030909, z: 0.026666006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint045
+      parentName: LilacHairJoint044
+      position: {x: 0.044220004, y: -0.008913001, z: 0.035556007}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint046
+      parentName: LilacHairJoint045
+      position: {x: 0.044220004, y: 0.024422001, z: 0.010671}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacHairJoint047
+      parentName: LilacHairJoint046
+      position: {x: 0.044220004, y: 0.028537003, z: -0.010860999}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirtJointROOT
+      parentName: Lilac_Hips
+      position: {x: -0, y: 0.036229923, z: 0.083668515}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt001
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.000000005595241, y: 0.009265674, z: 0.052514676}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt002
+      parentName: LilacSkirt001
+      position: {x: -0.07950439, y: -0.0000000067059363, z: 0.055375043}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt003
+      parentName: LilacSkirt002
+      position: {x: -0.078662075, y: -0.0000000057586975, z: 0.03852556}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt004
+      parentName: LilacSkirt003
+      position: {x: -0.10003382, y: -0.000000007065942, z: 0.03864751}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt005
+      parentName: LilacSkirt004
+      position: {x: -0.07651316, y: -0.0000000034618495, z: 0.022752358}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt006
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.038822066, y: 0.009425129, z: 0.05071949}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt007
+      parentName: LilacSkirt006
+      position: {x: -0.079350576, y: 0.012010162, z: 0.054409657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt008
+      parentName: LilacSkirt007
+      position: {x: -0.07852133, y: 0.010081895, z: 0.03772264}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt009
+      parentName: LilacSkirt008
+      position: {x: -0.099882826, y: 0.010478485, z: 0.037743047}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt010
+      parentName: LilacSkirt009
+      position: {x: -0.074955955, y: 0.008772063, z: 0.021453593}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt011
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.08697341, y: 0.011164251, z: 0.034194574}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt012
+      parentName: LilacSkirt011
+      position: {x: -0.07844038, y: 0.029173862, z: 0.04660169}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt013
+      parentName: LilacSkirt012
+      position: {x: -0.07773709, y: 0.024719222, z: 0.031360485}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt014
+      parentName: LilacSkirt013
+      position: {x: -0.09466028, y: 0.025715696, z: 0.030547313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt015
+      parentName: LilacSkirt014
+      position: {x: -0.07190309, y: 0.015611865, z: 0.017891385}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt016
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.13168739, y: 0.0144182835, z: 0.0057623684}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt017
+      parentName: LilacSkirt016
+      position: {x: -0.07611037, y: 0.045274142, z: 0.032321297}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt018
+      parentName: LilacSkirt017
+      position: {x: -0.07565075, y: 0.038463876, z: 0.020707894}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt019
+      parentName: LilacSkirt018
+      position: {x: -0.090956554, y: 0.04002512, z: 0.015307761}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt020
+      parentName: LilacSkirt019
+      position: {x: -0.06254778, y: 0.024316218, z: 0.0095123295}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt066
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.16019303, y: 0.0246328, z: -0.083971456}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt067
+      parentName: LilacSkirt066
+      position: {x: 0.068450004, y: -0.053588007, z: 0.01700153}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt068
+      parentName: LilacSkirt067
+      position: {x: 0.06875501, y: -0.045393005, z: 0.01768757}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt069
+      parentName: LilacSkirt068
+      position: {x: 0.08357201, y: -0.04843, z: 0.024390306}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt070
+      parentName: LilacSkirt069
+      position: {x: 0.055589, y: -0.030248003, z: 0.016027903}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt071
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.15915197, y: 0.0186018, z: -0.030558955}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt072
+      parentName: LilacSkirt071
+      position: {x: 0.072773, y: -0.053267006, z: -0.011721401}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt073
+      parentName: LilacSkirt072
+      position: {x: 0.07262699, y: -0.045122, z: -0.0061993995}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt074
+      parentName: LilacSkirt073
+      position: {x: 0.087711014, y: -0.04694, z: 0.00084459997}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt075
+      parentName: LilacSkirt074
+      position: {x: 0.056766998, y: -0.028495, z: 0.0028456002}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt076
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.131687, y: 0.014417801, z: 0.0057628523}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt077
+      parentName: LilacSkirt076
+      position: {x: 0.076110005, y: -0.045275006, z: -0.032321002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt078
+      parentName: LilacSkirt077
+      position: {x: 0.075651, y: -0.038463004, z: -0.020708002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt079
+      parentName: LilacSkirt078
+      position: {x: 0.09095601, y: -0.040025003, z: -0.015307001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt080
+      parentName: LilacSkirt079
+      position: {x: 0.062548004, y: -0.024317, z: -0.009512999}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt081
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.08697341, y: 0.011163798, z: 0.034194853}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt082
+      parentName: LilacSkirt081
+      position: {x: 0.07844, y: -0.0291736, z: -0.046600997}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt083
+      parentName: LilacSkirt082
+      position: {x: 0.077737, y: -0.024719, z: -0.031361}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt084
+      parentName: LilacSkirt083
+      position: {x: 0.09465999, y: -0.025716003, z: -0.030547004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt085
+      parentName: LilacSkirt084
+      position: {x: 0.071903, y: -0.0156120015, z: -0.017892003}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt086
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.038822096, y: 0.0094248, z: 0.05071986}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt087
+      parentName: LilacSkirt086
+      position: {x: 0.07935002, y: -0.012010101, z: -0.05440901}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt088
+      parentName: LilacSkirt087
+      position: {x: 0.07852202, y: -0.010081898, z: -0.037723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt089
+      parentName: LilacSkirt088
+      position: {x: 0.099882014, y: -0.010478501, z: -0.037743}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt090
+      parentName: LilacSkirt089
+      position: {x: 0.074956, y: -0.008772099, z: -0.021454}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt021
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.1591518, y: 0.018601956, z: -0.030558925}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt022
+      parentName: LilacSkirt021
+      position: {x: -0.07277279, y: 0.05326686, z: 0.011721351}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt023
+      parentName: LilacSkirt022
+      position: {x: -0.072627656, y: 0.045122337, z: 0.0061993906}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt024
+      parentName: LilacSkirt023
+      position: {x: -0.08771054, y: 0.046940207, z: -0.00084459793}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt025
+      parentName: LilacSkirt024
+      position: {x: -0.05676756, y: 0.028495217, z: -0.002845532}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt026
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.16019267, y: 0.024632515, z: -0.08397142}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt027
+      parentName: LilacSkirt026
+      position: {x: -0.06845007, y: 0.05358881, z: -0.017001579}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt028
+      parentName: LilacSkirt027
+      position: {x: -0.06875449, y: 0.045392692, z: -0.017687542}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt029
+      parentName: LilacSkirt028
+      position: {x: -0.08357168, y: 0.04842973, z: -0.024390306}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt030
+      parentName: LilacSkirt029
+      position: {x: -0.055589583, y: 0.030247908, z: -0.01602795}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt031
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.13754983, y: 0.03091962, z: -0.15446672}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt032
+      parentName: LilacSkirt031
+      position: {x: -0.06269454, y: 0.04456847, z: -0.049298633}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt033
+      parentName: LilacSkirt032
+      position: {x: -0.06402584, y: 0.037616674, z: -0.04739066}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt034
+      parentName: LilacSkirt033
+      position: {x: -0.08450033, y: 0.039117884, z: -0.054359887}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt035
+      parentName: LilacSkirt034
+      position: {x: -0.06268258, y: 0.02372365, z: -0.035643056}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt036
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.08587194, y: 0.034362085, z: -0.19695018}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt037
+      parentName: LilacSkirt036
+      position: {x: -0.05988712, y: 0.026565708, z: -0.068652384}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt038
+      parentName: LilacSkirt037
+      position: {x: -0.06427637, y: 0.022300515, z: -0.059898417}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt039
+      parentName: LilacSkirt038
+      position: {x: -0.093844034, y: 0.023177769, z: -0.076108456}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt040
+      parentName: LilacSkirt039
+      position: {x: -0.06769529, y: 0.0140360715, z: -0.044238996}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt041
+      parentName: LilacSkirtJointROOT
+      position: {x: -0.034892816, y: 0.035176434, z: -0.20665184}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt042
+      parentName: LilacSkirt041
+      position: {x: -0.05930528, y: 0.010794578, z: -0.073869616}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt043
+      parentName: LilacSkirt042
+      position: {x: -0.06472331, y: 0.009061477, z: -0.06423781}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt044
+      parentName: LilacSkirt043
+      position: {x: -0.1048297, y: 0.009417927, z: -0.0839512}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt045
+      parentName: LilacSkirt044
+      position: {x: -0.06690879, y: 0.005703329, z: -0.045297984}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt046
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.000000005595241, y: 0.03489844, z: -0.20458262}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt047
+      parentName: LilacSkirt046
+      position: {x: -0.059585858, y: -0.0000000067059363, z: -0.07508993}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt048
+      parentName: LilacSkirt047
+      position: {x: -0.06497774, y: -0.0000000057586975, z: -0.06553522}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt049
+      parentName: LilacSkirt048
+      position: {x: -0.10770485, y: -0.000000007065942, z: -0.08535486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt050
+      parentName: LilacSkirt049
+      position: {x: -0.06572618, y: -0.0000000034618495, z: -0.046043444}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt051
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.034892805, y: 0.0351768, z: -0.20665216}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt052
+      parentName: LilacSkirt051
+      position: {x: 0.059306003, y: -0.0107946, z: 0.07386901}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt053
+      parentName: LilacSkirt052
+      position: {x: 0.064723015, y: -0.0090615, z: 0.064238004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt054
+      parentName: LilacSkirt053
+      position: {x: 0.10483001, y: -0.0094179, z: 0.083951004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt055
+      parentName: LilacSkirt054
+      position: {x: 0.06690801, y: -0.0057032993, z: 0.045298006}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt056
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.08587191, y: 0.034361795, z: -0.19695018}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt057
+      parentName: LilacSkirt056
+      position: {x: 0.05988701, y: -0.026566098, z: 0.068652004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt058
+      parentName: LilacSkirt057
+      position: {x: 0.064276, y: -0.022300003, z: 0.059899}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt059
+      parentName: LilacSkirt058
+      position: {x: 0.09384403, y: -0.023178002, z: 0.07610801}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt060
+      parentName: LilacSkirt059
+      position: {x: 0.06769601, y: -0.014036004, z: 0.044239003}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt061
+      parentName: LilacSkirtJointROOT
+      position: {x: 0.13755001, y: 0.030919798, z: -0.15446667}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 4.3297806e-17, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt062
+      parentName: LilacSkirt061
+      position: {x: 0.06269501, y: -0.04456801, z: 0.0492985}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt063
+      parentName: LilacSkirt062
+      position: {x: 0.064026, y: -0.037616998, z: 0.047391005}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt064
+      parentName: LilacSkirt063
+      position: {x: 0.084500015, y: -0.039118, z: 0.054360006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LilacSkirt065
+      parentName: LilacSkirt064
+      position: {x: 0.062682, y: -0.023724005, z: 0.035642996}
+      rotation: {x: 0, y: -8.659561e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 10
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

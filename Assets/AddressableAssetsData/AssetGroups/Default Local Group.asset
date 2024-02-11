@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 030eb9d4d974a8b42a3c6fdd669c1c42
+  m_SerializeEntries:
+  - m_GUID: 0b0d2b46da7ae0f48896048d3edfe479
+    m_Address: Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30498e4468c9ad1459e79ad3b01170fe
+    m_Address: Foor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f1c5593cc28640478f9512947607d51
+    m_Address: Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99c9720ab356a0642a771bea13969a05
+    m_Address: Gameplay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7dd3b867e037c174a90ce400ca80b75a
+    m_Address: Floor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27c8f7bde81476b4e8e5007dda9a1af2
+    m_Address: AssetReferenceContainer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c86c7d487f0eeff4987c079a8c43714b
+    m_Address: Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46b2de3f3b6b71a40a99c5e058bfd0f5
+    m_Address: Wall 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 59ef5bcf27da7db468681f41d00f0de3
+    m_Address: Wall 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 00b976add9a611d429be2018afddee32
+    m_Address: Wall 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a78ff5f5efd17c4b8d34cbc17bca2e5
+    m_Address: Boot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd6ce3a80b060124fa645c9ab5401b21
+    m_Address: Player
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48e9b07894a8ba248bc5f5a910f19881
+    m_Address: PlayerAC
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7e9b3f8b4431ae46995f59e9df47c54
+    m_Address: PlayerMeshTrailMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efa7165ac49e0dd40834a97fccc24a70
+    m_Address: LineMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b28f0515996d11a488c340044eb25170
+    m_Address: SwordEnemyAC
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 446b5e20cba2d8d4e8903ec564a7987b
+    m_Address: SwordEnemy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75d6d3977bae3e34c8007943b02dfaae
+    m_Address: NavMeshSurface
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18dc0cd2c080841dea60987a38ce93fa
+    m_Address: UniversalRenderPipelineGlobalSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dbe25da2ee44f8b47a9dd5535d4103a5
+    m_Address: SlayAllVfx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d03aa8762f47c6e42b21622f616a492c
+    m_Address: SlayAllMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b0c3d1c815f80b48a8f7068f8011110
+    m_Address: SwordTrailMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1926605b6012324b9271f2371201883
+    m_Address: Lightning aura
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e50220c09d9ba324b899cffa31bdb787
+    m_Address: MeshTrailShader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83b49040fc813194d83b98ce5b48711a
+    m_Address: SlayAllShader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8cea0b53f0b7f943971409d72834929
+    m_Address: MainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 411692362406ca646a3e4f5f41e8ebf2
+    m_Address: Menu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1229bf9dc30617841a57acb097b9d405
+    m_Address: LoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e251e27ff073054ab4ba27d05a10f3d
+    m_Address: StatsScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 858a2a89e7a359a48abbfe811647be61
+    m_Address: EnemyDebugMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9c7c2752acc4c942bcec6d689e803e5
+    m_Address: Assets/Prefabs/Collectables/HyperArmor.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cef59b2c41242fa4fb723887968d5b46
+    m_Address: Yellow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6db3cd7ac2763014391f2775c1775608
+    m_Address: Assets/Prefabs/Collectables/Soda.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b76e94bb53e2eff4682cf15f2f8500a6
+    m_Address: Assets/Prefabs/Collectables/Shield.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d2a9e50d5348b74696288925426050e
+    m_Address: Assets/Prefabs/Collectables/HealingBag.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b35f1f3b60c54234c9c1cedf0e0e6150
+    m_Address: Assets/Prefabs/Collectables/BoosterSpawner.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e44a85c36b73bf841870a3da177373ee
+    m_Address: Assets/Prefabs/Collectables/MoneyBag.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c64ece5bbade4ca41a7e023fb33ad642
+    m_Address: Assets/Prefabs/Collectables/Red.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbffd62ab4f9f51408b9adfb530c1dec
+    m_Address: Assets/Prefabs/Collectables/Blue.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e16b015c74b059241b6a177ba33b7144
+    m_Address: Assets/Prefabs/Collectables/Pink.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edcb2007024ed3b4b972cdf9527029b4
+    m_Address: Assets/Prefabs/Map/Exit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc654f24ffd640f4691b691658ecd656
+    m_Address: Assets/Prefabs/Enemies/PistolEnemy/PistolEnemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 459d9081ef4077d4ea65a9b31cd42203
+    m_Address: Assets/Prefabs/Enemies/PistolEnemy/PistolBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 435d78c72c301fc40ab3deb15a321ffc
+    m_Address: Assets/Prefabs/Collectables/SlayAllCharge.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: faaf759c7c46f684ca3d863e13b308b3
+    m_Address: Assets/Prefabs/Collectables/RageCharge.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b2753d3231ac1d4294aa392390315ca
+    m_Address: Assets/Prefabs/Collectables/ChargeAdders/HyperArmorCharge.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27cd80b027cdbda4fb30abae9fa82ad7
+    m_Address: Assets/Materials/Purple.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c081ddde6abf80d42b8a5c7ebc37405c
+    m_Address: Assets/Materials/Orange.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b2acc46417cf4a458b35f7e50210103
+    m_Address: Assets/Prefabs/UI/Elements/HealthBar.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2b5be7911a3536344acb0c1ab677a3a3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b135df9990053fc4891fa4db0e374c20, type: 2}
+    - {fileID: 11400000, guid: 570fbc89f3153564cabe2e9cf1316395, type: 2}

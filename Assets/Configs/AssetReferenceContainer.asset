@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19708958a5e54f4bb4780a5c62ec10ec, type: 3}
+  m_Name: AssetReferenceContainer
+  m_EditorClassIdentifier: 
+  _player:
+    m_AssetGUID: fd6ce3a80b060124fa645c9ab5401b21
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _playerConfig:
+    m_AssetGUID: 2ff69218266efbb45a82e26a0c4df73c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _mapConfig:
+    m_AssetGUID: 0d8582c4a15117b478433216ab820874
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _progressConfig:
+    m_AssetGUID: 79a586bcb67de974387955b2ac1abd84
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _playerStats:
+  - m_AssetGUID: b65b80e77ca6c2a42890742154f42ef4
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 521258606c9ae1244bd4786bd8531bac
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 6bbccd95ea7d70e419430030ab1ca606
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: a3c4473e38541d1418d3421c1e71804a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  _navMeshSurface:
+    m_AssetGUID: 75d6d3977bae3e34c8007943b02dfaae
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _border:
+    m_AssetGUID: 0b0d2b46da7ae0f48896048d3edfe479
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _floor:
+    m_AssetGUID: 7dd3b867e037c174a90ce400ca80b75a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _walls:
+  - m_AssetGUID: c86c7d487f0eeff4987c079a8c43714b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 46b2de3f3b6b71a40a99c5e058bfd0f5
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 59ef5bcf27da7db468681f41d00f0de3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 00b976add9a611d429be2018afddee32
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  _exit:
+    m_AssetGUID: edcb2007024ed3b4b972cdf9527029b4
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _boosterSpawner:
+    m_AssetGUID: b35f1f3b60c54234c9c1cedf0e0e6150
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _bootScene:
+    m_AssetGUID: 4a78ff5f5efd17c4b8d34cbc17bca2e5
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _gameplayScene:
+    m_AssetGUID: 99c9720ab356a0642a771bea13969a05
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _mainMenuScene:
+    m_AssetGUID: b8cea0b53f0b7f943971409d72834929
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _enemies:
+  - m_AssetGUID: 446b5e20cba2d8d4e8903ec564a7987b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: cc654f24ffd640f4691b691658ecd656
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _loadingScreen:
+    m_AssetGUID: 1229bf9dc30617841a57acb097b9d405
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _screens:
+  - m_AssetGUID: 85361a3b70c55ae458340ea370c95656
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 411692362406ca646a3e4f5f41e8ebf2
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

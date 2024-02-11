@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Gameplay.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 93ff45ab896b24440a21fbdc98f61d87,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: e6c1b3fc032b7a54b84b072414e2a144,
+      type: 2}

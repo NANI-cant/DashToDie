@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  m_GroupName: Settings
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 77cba96bb26eb584f96cf819071a210b
+  m_SerializeEntries:
+  - m_GUID: a6560a915ef98420e9faacc1c7438823
+    m_Address: Assets/Settings/SampleSceneProfile.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b7fd9122c28c4d15b667c7040e3b3fd
+    m_Address: Assets/Settings/URP-HighFidelity.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c40be3174f62c4acf8c1216858c64956
+    m_Address: Assets/Settings/URP-HighFidelity-Renderer.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2b5be7911a3536344acb0c1ab677a3a3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1dc1e0bcea4b9a84f81b2c7f7ccb1f2f, type: 2}
+    - {fileID: 11400000, guid: d3231bab0a86a2345ab7126a986bc845, type: 2}

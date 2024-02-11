@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601c096502934d6b9d03636962debc1a, type: 3}
+  m_Name: MapConfig
+  m_EditorClassIdentifier: 
+  _height: 10
+  _width: 10
+  _waves: 2
+  _enemiesOnWaveOnWave: 3
+  _boosters: 2
+  _heightMultiplier: 0.5
+  _widthMultiplier: 0.5
+  _wavesMultiplier: 0.18
+  _enemiesOnWaveMultiplier: 0.36
+  _boostersMultiplier: 0.5
