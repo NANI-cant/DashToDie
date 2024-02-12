@@ -1,4 +1,5 @@
-﻿using CodeBase.Gameplay.General.Impl;
+﻿using CodeBase.Gameplay.General.Fighting;
+using CodeBase.Gameplay.General.Impl;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;

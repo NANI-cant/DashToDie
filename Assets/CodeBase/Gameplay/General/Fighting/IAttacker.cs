@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeBase.Gameplay.Enemies.AI {
+namespace CodeBase.Gameplay.General.Fighting {
     public interface IAttacker {
         bool IsCharged { get; }
         

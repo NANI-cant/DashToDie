@@ -17,14 +17,14 @@ namespace CodeBase.Gameplay.Skills.Impl {
 
         protected override async UniTask ExecuteSkillAsync(ASkillHolder holder, int holderTeam, CancellationToken cancelToken) {
             var hurtProcessor = holder.GetComponent<HurtProcessor>();
-            hurtProcessor.resistance += 1;
+            hurtProcessor._resistance += 1;
             try {
                 await UniTask.Delay((int) (Duration.Value * 1000), cancellationToken: cancelToken);
             }
             catch (OperationCanceledException) { }
             finally {
                 if (hurtProcessor != null) {
-                    hurtProcessor.resistance -= 1;    
+                    hurtProcessor._resistance -= 1;    
                 }
             }
         }

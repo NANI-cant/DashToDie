@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using CodeBase.Gameplay.General;
 using CodeBase.ProjectContext.Services;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace CodeBase.Gameplay.Enemies.AI {
+namespace CodeBase.Gameplay.General.Fighting {
     public class MeleeAttacker: MonoBehaviour, IAttacker {
         [SerializeField][Min(0.0000001f)] private float _speed;
         [SerializeField][Min(0)] private int _damage;

@@ -24,16 +24,16 @@ namespace CodeBase.Gameplay.Skills.Impl {
         }
 
         protected override async UniTask ExecuteSkillAsync(ASkillHolder holder, int holderTeam, CancellationToken cancelToken) {
-            var slashCharger = holder.GetComponent<SlashCharger>();
-            slashCharger.StaminaPrice.Decrease(Multiplier.Value);
+            var slasher = holder.GetComponent<Slasher>();
+            slasher.StaminaPrice.Decrease(Multiplier.Value);
             try {
                 _vfx.Activate();
                 await UniTask.Delay((int) (Duration.Value * 1000), cancellationToken: cancelToken);
             }
             catch (OperationCanceledException) { }
             finally {
-                if (slashCharger != null) {
-                    slashCharger.StaminaPrice.Increase(Multiplier.Value);
+                if (slasher != null) {
+                    slasher.StaminaPrice.Increase(Multiplier.Value);
                     _vfx.Deactivate();   
                 }
             }

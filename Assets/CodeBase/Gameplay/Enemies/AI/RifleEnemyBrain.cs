@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using CodeBase.Gameplay.General.Fighting;
+using UnityEngine;
 using Zenject;
 
 namespace CodeBase.Gameplay.Enemies.AI {

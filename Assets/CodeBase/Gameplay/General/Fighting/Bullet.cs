@@ -1,10 +1,8 @@
-﻿using System;
-using CodeBase.Gameplay.General;
-using CodeBase.ProjectContext.Services;
+﻿using CodeBase.ProjectContext.Services;
 using UnityEngine;
 using Zenject;
 
-namespace CodeBase.Gameplay.Enemies.AI {
+namespace CodeBase.Gameplay.General.Fighting {
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(Collider))]
     public class Bullet: MonoBehaviour {

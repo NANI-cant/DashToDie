@@ -6,7 +6,7 @@ namespace CodeBase.Gameplay.PlayerStats.Impl.Stats {
     public class ResistanceStat : AStatObject {
         public override void Apply(GameObject playerObject) {
             var hurtProcessor = playerObject.GetComponent<HurtProcessor>();
-            hurtProcessor.resistance = ResultMultiplier;
+            hurtProcessor._resistance = ResultMultiplier;
         }
     }
 }

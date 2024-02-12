@@ -43,14 +43,14 @@ GameObject:
   - component: {fileID: 6624762332984093826}
   - component: {fileID: 4157296745537372029}
   - component: {fileID: 5685053636046700578}
-  - component: {fileID: -6380543611284575416}
   - component: {fileID: 8945509139126027638}
   - component: {fileID: 5138470991349003324}
-  - component: {fileID: 5931438827704889564}
   - component: {fileID: -7093723042605343401}
   - component: {fileID: 6820056618864008256}
   - component: {fileID: 6912112017675816222}
   - component: {fileID: 6748249496610383483}
+  - component: {fileID: 3040122006000089989}
+  - component: {fileID: 3083620012380942780}
   m_Layer: 7
   m_Name: PistolEnemy
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79241318773d4f01a004ee822eeb0544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resistance: 0
+  _resistance: 0
 --- !u!136 &5685053636046700578
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -127,18 +127,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &-6380543611284575416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3154865500074333750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf7808ad6c864e10a778472366f722ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!195 &8945509139126027638
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -174,18 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 540
---- !u!114 &5931438827704889564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3154865500074333750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5087b55d7b174d79ab741ef6cd9e1fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-7093723042605343401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +254,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _aimAccuracy: 0.1
+--- !u!114 &3040122006000089989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154865500074333750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41805eb4dbd042f083d685e5c3ee2b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3083620012380942780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154865500074333750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5087b55d7b174d79ab741ef6cd9e1fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3509453875110219406
 GameObject:
   m_ObjectHideFlags: 0

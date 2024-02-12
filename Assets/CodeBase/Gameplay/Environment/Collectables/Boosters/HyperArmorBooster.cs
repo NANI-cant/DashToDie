@@ -17,7 +17,7 @@ namespace CodeBase.Gameplay.Environment.Collectables.Boosters {
 
         public void Apply(GameObject target) {
             var hurtProcessor = target.GetComponent<HurtProcessor>();
-            hurtProcessor.resistance += 1;
+            hurtProcessor._resistance += 1;
 
             CancelAfterDelay(hurtProcessor).Forget();
         }
@@ -26,7 +26,7 @@ namespace CodeBase.Gameplay.Environment.Collectables.Boosters {
             await UniTask.Delay(_duration * 1000);
             if(_cancelToken.IsCancellationRequested) return;
 
-            target.resistance -= 1;
+            target._resistance -= 1;
         }
     }
 }

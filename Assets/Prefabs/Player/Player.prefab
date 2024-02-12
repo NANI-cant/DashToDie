@@ -2993,8 +2993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f53c85b4ce748ca93ab11c27d49e716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slashCharger: {fileID: 8947458971466091026}
-  _slashExecutor: {fileID: 1943240041443048902}
+  _slasher: {fileID: 4887530793737295293}
   _material: {fileID: 2100000, guid: f7e9b3f8b4431ae46995f59e9df47c54, type: 2}
   _meshRenderers:
   - {fileID: 125481330800872265}
@@ -3168,6 +3167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6987206460866731385}
   - component: {fileID: 88113295945332311}
+  - component: {fileID: 4887530793737295293}
   - component: {fileID: 4096746166455255302}
   - component: {fileID: 4103465819949322056}
   - component: {fileID: 7763170679394861884}
@@ -3181,12 +3181,7 @@ GameObject:
   - component: {fileID: 7702037079011068250}
   - component: {fileID: 5685458054102728262}
   - component: {fileID: 2853545762698358975}
-  - component: {fileID: 8947458971466091026}
-  - component: {fileID: 1943240041443048902}
-  - component: {fileID: 4403090295936448544}
-  - component: {fileID: 1127518538977424668}
   - component: {fileID: 4926026888611004763}
-  - component: {fileID: 4887530793737295293}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -3227,6 +3222,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mover: {fileID: 272056833767942153}
   _slasher: {fileID: 4887530793737295293}
+--- !u!114 &4887530793737295293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084782750060878402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63fe642f48c4c1b86ae1fcd7c1d0bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _staminaPrice:
+    _baseValue: 25
+    _multiplier: 0
+  _recovery:
+    _baseValue: 1
+    _multiplier: 0
+  _animator: {fileID: 74713517461814537}
+  _trail: {fileID: 4740394928368777924}
+  _hurtBox: {fileID: 4211313338041123956}
+  _speed: 100
+  _slashOrigin: {fileID: 9152366239041930532}
+  _obstacles:
+    serializedVersion: 2
+    m_Bits: 64
+  _enemies:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &4096746166455255302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3461,71 +3485,6 @@ MonoBehaviour:
   _staminaPerSecond:
     _baseValue: 30
     _multiplier: 0
---- !u!114 &8947458971466091026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084782750060878402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c36326447e4a499db614641f13c858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _staminaPrice:
-    _baseValue: 25
-    _multiplier: 0
---- !u!114 &1943240041443048902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084782750060878402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c2bbc9e99b54dd5a320ea3121ecd30c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 74713517461814537}
-  _trail: {fileID: 4740394928368777924}
-  _hurtBox: {fileID: 4211313338041123956}
-  _speed: 100
-  _slashOrigin: {fileID: 9152366239041930532}
-  _obstacles:
-    serializedVersion: 2
-    m_Bits: 64
-  _enemies:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!114 &4403090295936448544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084782750060878402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9fd50f8c9924b82873a8f3353b837fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recovery:
-    _baseValue: 0.5
-    _multiplier: 0
---- !u!114 &1127518538977424668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084782750060878402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b2efef3a8264ada9df2fd81baed4422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4926026888611004763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3538,32 +3497,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100d9b2315954cea8303b6d7566d7da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4887530793737295293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084782750060878402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c63fe642f48c4c1b86ae1fcd7c1d0bb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _staminaPrice:
-    _baseValue: 25
-    _multiplier: 0
-  _recovery:
-    _baseValue: 1
-    _multiplier: 0
-  _animator: {fileID: 74713517461814537}
-  _trail: {fileID: 4740394928368777924}
-  _hurtBox: {fileID: 4211313338041123956}
-  _speed: 100
-  _slashOrigin: {fileID: 9152366239041930532}
-  _obstacles:
-    serializedVersion: 2
-    m_Bits: 64
-  _enemies:
-    serializedVersion: 2
-    m_Bits: 128

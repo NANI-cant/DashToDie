@@ -6,11 +6,9 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using Zenject;
 
-namespace CodeBase.Gameplay.Enemies.AI {
-    public class RifleAttacker : MonoBehaviour, IAttacker {
+namespace CodeBase.Gameplay.General.Fighting {
+    public class PistolAttacker : MonoBehaviour, IAttacker {
         [SerializeField][Min(0)] private float _fireSpeed;
-        [SerializeField][Min(0)] private float _reloadTime;
-        [SerializeField][Min(1)] private int _ammo;
         [SerializeField][Min(0)] private float _bulletSpeed;
         [SerializeField][Min(0)] private int _damage;
         [SerializeField][Min(0)] private int _fireRange;
@@ -29,7 +27,7 @@ namespace CodeBase.Gameplay.Enemies.AI {
 
         public bool IsCharged => _attackCancel != null;
         
-        private bool IsAttackCooldownPassed => (_timeProvider.Time - _lastAttackTime) > _reloadTime;
+        private bool IsAttackCooldownPassed => (_timeProvider.Time - _lastAttackTime) > 1 / _fireSpeed;
         
         [Inject]
         public void Construct(
@@ -80,21 +78,20 @@ namespace CodeBase.Gameplay.Enemies.AI {
             }
 
             try {
-                for (int i = 0; i < _ammo; i++) {
-                    GameObject bulletObject = _instantiateService.Instantiate(_bulletPrefab);
-                    bulletObject.transform.SetPositionAndRotation(_fireOrigin.position, _fireOrigin.rotation);
+                GameObject bulletObject = _instantiateService.Instantiate(_bulletPrefab);
+                bulletObject.transform.SetPositionAndRotation(_fireOrigin.position, _fireOrigin.rotation);
+                
+                Bullet bullet = bulletObject.GetComponent<Bullet>();
+                bullet.Initialize(_bulletSpeed, _damage);
 
-                    Bullet bullet = bulletObject.GetComponent<Bullet>();
-                    bullet.Initialize(_bulletSpeed, _damage);
-
-                    await UniTask.Delay((int) (1 / _fireSpeed * 1000), cancellationToken: _attackCancel.Token);
-                }
-            }
-            catch (OperationCanceledException) { }
-            finally {
                 _lastAttackTime = _timeProvider.Time;
+            }
+            catch (OperationCanceledException) {
+                
+            }
+            finally {
                 _attackCancel?.Dispose();
-                _attackCancel = null;   
+                _attackCancel = null;
             }
         }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace CodeBase.Gameplay.General.Impl {
     [RequireComponent(typeof(IHealth))]
     public class HurtProcessor: MonoBehaviour, IHurtable {
-        [SerializeField] public float resistance = 0;
+        [SerializeField] public float _resistance = 0;
 
         private readonly List<IHurtModifier> _modifiers = new ();
         
@@ -15,9 +15,9 @@ namespace CodeBase.Gameplay.General.Impl {
         }
 
         public void TakeHit(int damage, out bool isStillAlive) {
-            damage -= Mathf.Min(damage, (int) (damage * resistance));
-            for (int i = 0; i < _modifiers.Count; i++) {
-                damage = _modifiers[i].ProcessDamage(damage, this);
+            damage -= Mathf.Min(damage, (int) (damage * _resistance));
+            foreach (var modifier in _modifiers) {
+                damage = modifier.ProcessDamage(damage, this);
             }
 
             _health.DecreaseHealth(damage);

@@ -40,9 +40,7 @@ namespace CodeBase.Gameplay.Player {
             }
 
             var playerObject = _instantiateService.Instantiate(_prefab);
-            // playerObject.GetComponent<SlashCharger>().Initialize(_config.StaminaPrice);
-            // playerObject.GetComponent<SlashRecovery>().Initialize(_config.Recovery);
-            playerObject.GetComponent<NewSlasher>().Initialize(_config.StaminaPrice, _config.Recovery);
+            playerObject.GetComponent<Slasher>().Initialize(_config.StaminaPrice, _config.Recovery);
 
             await _statsContainer.SetupPlayer(playerObject);
             

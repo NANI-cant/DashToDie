@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
+using CodeBase.Gameplay.General.Brains.Impl;
 using CodeBase.Gameplay.Player;
 using UnityEngine;
 
 namespace CodeBase.Gameplay.VFX {
     public class SlasherChargingVFX : MonoBehaviour {
-        [SerializeField] private SlashCharger _slashCharger;
-        [SerializeField] private SlashExecutor _slashExecutor;
+        [SerializeField] private Slasher _slasher;
         [SerializeField] private Material _material;
         [SerializeField] private SkinnedMeshRenderer[] _meshRenderers;
         [SerializeField] private Transform _centerOrigin;
@@ -21,19 +21,19 @@ namespace CodeBase.Gameplay.VFX {
         }
 
         private void LateUpdate() {
-            bool showAvatar = _slashCharger.ChargedDistance > 0 && _slashCharger.enabled;
+            bool showAvatar = _slasher.ChargedDistance > 0 && _slasher.enabled;
             
             _lineRenderer.positionCount = showAvatar ? 2 : 0;
             _avatar.gameObject.SetActive(showAvatar);
             
             if (showAvatar) {
                 UpdateAvatarMesh();
-                var slashDistance = _slashCharger.ChargedDistance;
-                if (Physics.Raycast(_slashExecutor.SlashOrigin.position, _slashExecutor.SlashOrigin.forward, out var raycastHit, slashDistance, _obstacles)) {
+                var slashDistance = _slasher.ChargedDistance;
+                if (Physics.Raycast(_slasher.SlashOrigin.position, _slasher.SlashOrigin.forward, out var raycastHit, slashDistance, _obstacles)) {
                     slashDistance = raycastHit.distance;
                 }
 
-                _avatar.position = transform.position + _slashExecutor.SlashOrigin.forward * slashDistance;
+                _avatar.position = transform.position + _slasher.SlashOrigin.forward * slashDistance;
                 
                 _lineRenderer.SetPosition(0, _centerOrigin.localPosition);
                 _lineRenderer.SetPosition(1, _centerOrigin.localPosition + Vector3.forward * slashDistance);

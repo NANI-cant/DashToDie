@@ -1,8 +1,10 @@
 ﻿using System.Threading;
+using CodeBase.Gameplay.General.Brains.Impl;
 using CodeBase.Gameplay.Player;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Zenject;
+using Slasher = CodeBase.Gameplay.Player.Slasher;
 
 namespace CodeBase.Gameplay.Environment.Collectables.Boosters {
     public class SodaBooster : MonoBehaviour, IBooster {
@@ -18,20 +20,19 @@ namespace CodeBase.Gameplay.Environment.Collectables.Boosters {
         }
 
         public void Apply(GameObject target) {
-            var charger = target.GetComponent<SlashCharger>();
-            var recovery = target.GetComponent<SlashRecovery>();
-            recovery.Recovery.Decrease(_recoveryMultiplier);
-            charger.StaminaPrice.Decrease(_staminaPriceMultiplier);
+            var slasher = target.GetComponent<Slasher>();
+            slasher.Recovery.Decrease(_recoveryMultiplier);
+            slasher.StaminaPrice.Decrease(_staminaPriceMultiplier);
             
-            CancelAfterDelay(charger, recovery).Forget();
+            CancelAfterDelay(slasher).Forget();
         }
 
-        private async UniTask CancelAfterDelay(SlashCharger charger, SlashRecovery recovery) {
+        private async UniTask CancelAfterDelay(Slasher slasher) {
             await UniTask.Delay(_duration * 1000);
             if(_cancelToken.IsCancellationRequested) return;
 
-            recovery.Recovery.Increase(_recoveryMultiplier);
-            charger.StaminaPrice.Increase(_staminaPriceMultiplier);
+            slasher.Recovery.Increase(_recoveryMultiplier);
+            slasher.StaminaPrice.Increase(_staminaPriceMultiplier);
         }
     }
 }

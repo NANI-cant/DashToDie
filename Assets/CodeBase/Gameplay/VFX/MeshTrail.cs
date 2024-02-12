@@ -24,11 +24,8 @@ namespace CodeBase.Gameplay.VFX {
         public void Construct(IObjectPoolFactory objectPoolFactory) => _objectPoolFactory = objectPoolFactory;
         
         private void Awake() => _transform = transform;
-        
-        private void Start() {
-            _lastPosition = _transform.position;
-            PrepareObjectPool();
-        }
+        private void OnEnable() => _lastPosition = _transform.position;
+        private void Start() => PrepareObjectPool();
 
         private void LateUpdate() {
             if (enabled) {
