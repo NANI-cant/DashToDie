@@ -2,6 +2,7 @@
 using CodeBase.Gameplay.PlayerStats.Impl;
 using CodeBase.ProjectContext.GameStateMachine;
 using CodeBase.ProjectContext.Services.Impl;
+using CodeBase.ProjectContext.Signals;
 using CodeBase.UI;
 using CodeBase.UI.Impl;
 using Cysharp.Threading.Tasks;
@@ -51,7 +52,13 @@ namespace CodeBase.Architecture.Installers {
             Container.BindState<SceneLoadState, GameStateMachine>();
             Container.BindState<GameLoopState, GameStateMachine>();
 
+            DeclareSignals();
             DebugBind();
+        }
+
+        private void DeclareSignals() {
+            Container.DeclareSignal<TimeSpeedUpSignal>().OptionalSubscriber();
+            Container.DeclareSignal<TimeSlowDownSignal>().OptionalSubscriber();
         }
 
         private void DebugBind() {

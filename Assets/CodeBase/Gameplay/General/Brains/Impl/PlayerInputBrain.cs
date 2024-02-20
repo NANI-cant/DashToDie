@@ -29,6 +29,7 @@ namespace CodeBase.Gameplay.General.Brains.Impl {
         }
 
         private void OnDisable() {
+            _mover.Move(Vector3.zero);
             _input.SlashCalled -= ExecuteSlash;
         }
 

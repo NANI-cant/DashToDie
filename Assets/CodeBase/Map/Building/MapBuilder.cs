@@ -102,34 +102,44 @@ namespace CodeBase.Map.Building {
         private void BuildBorders(Transform mapTransform, Map map) {
             var bordersContainer = new GameObject("Borders").transform;
             bordersContainer.parent = mapTransform;
+            for (int z = -map.Extends.z; z <= map.Extends.z; z++) {
+                for (int x = -map.Extends.x; x <= map.Extends.x; x++) {
+                    if (z != -map.Extends.z && z != map.Extends.z && 
+                        x != -map.Extends.x && x != map.Extends.x) continue;
+                            
+                    var border = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
+                    border.transform.position = new Vector3(x, 0, z);
+                    map.TakeCells(border, new Vector3Int(x, 0, z));
+                }
+            }
             
-            var topBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
-            topBorder.transform.position = new Vector3(0, 0, map.Extends.z);
-            topBorder.transform.localScale = new Vector3(map.Size.x+1, 1, 1);
-            
-            var bottomBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
-            bottomBorder.transform.position = new Vector3(0, 0, -map.Extends.z);
-            bottomBorder.transform.localScale = new Vector3(map.Size.x+1, 1, 1);
-            
-            var leftBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
-            leftBorder.transform.position = new Vector3(-map.Extends.x, 0, 0);
-            leftBorder.transform.localScale = new Vector3(1, 1, map.Size.z+1);
-
-            var rightBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
-            rightBorder.transform.position = new Vector3(map.Extends.x, 0, 0);
-            rightBorder.transform.localScale = new Vector3(1, 1, map.Size.z+1);
-
-            for (int x = -map.Extends.x; x <= map.Extends.x; x++) 
-                map.TakeCells(topBorder, new Vector3Int(x, 0, map.Extends.z));
-            
-            for (int x = -map.Extends.x; x <= map.Extends.x; x++) 
-                map.TakeCells(bottomBorder, new Vector3Int(x, 0, -map.Extends.z));
-            
-            for (int z = -map.Extends.z+1; z < map.Extends.z; z++) 
-                map.TakeCells(leftBorder, new Vector3Int(-map.Extends.x, 0, z));
-            
-            for (int z = -map.Extends.z+1; z < map.Extends.z; z++) 
-                map.TakeCells(rightBorder, new Vector3Int(map.Extends.x, 0, z));
+            // var topBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
+            // topBorder.transform.position = new Vector3(0, 0, map.Extends.z);
+            // topBorder.transform.localScale = new Vector3(map.Size.x+1, 1, 1);
+            //
+            // var bottomBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
+            // bottomBorder.transform.position = new Vector3(0, 0, -map.Extends.z);
+            // bottomBorder.transform.localScale = new Vector3(map.Size.x+1, 1, 1);
+            //
+            // var leftBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
+            // leftBorder.transform.position = new Vector3(-map.Extends.x, 0, 0);
+            // leftBorder.transform.localScale = new Vector3(1, 1, map.Size.z+1);
+            //
+            // var rightBorder = _instantiateService.Instantiate(_borderPrefab, bordersContainer);
+            // rightBorder.transform.position = new Vector3(map.Extends.x, 0, 0);
+            // rightBorder.transform.localScale = new Vector3(1, 1, map.Size.z+1);
+            //
+            // for (int x = -map.Extends.x; x <= map.Extends.x; x++) 
+            //     map.TakeCells(topBorder, new Vector3Int(x, 0, map.Extends.z));
+            //
+            // for (int x = -map.Extends.x; x <= map.Extends.x; x++) 
+            //     map.TakeCells(bottomBorder, new Vector3Int(x, 0, -map.Extends.z));
+            //
+            // for (int z = -map.Extends.z+1; z < map.Extends.z; z++) 
+            //     map.TakeCells(leftBorder, new Vector3Int(-map.Extends.x, 0, z));
+            //
+            // for (int z = -map.Extends.z+1; z < map.Extends.z; z++) 
+            //     map.TakeCells(rightBorder, new Vector3Int(map.Extends.x, 0, z));
         }
 
         private void ReleaseAssets() {

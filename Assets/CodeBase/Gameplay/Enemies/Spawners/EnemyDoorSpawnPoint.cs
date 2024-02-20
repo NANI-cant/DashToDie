@@ -3,12 +3,16 @@ using CodeBase.Gameplay.Enemies.AI;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace CodeBase.Gameplay.Enemies.Spawners {
     public class EnemyDoorSpawnPoint : MonoBehaviour, IEnemySpawnPoint {
         [SerializeField] [Min(0f)] private float _appearDuration = 1f;
         [SerializeField] private Transform _origin;
         [SerializeField] private Transform _walkTo;
+
+        [SerializeField] private UnityEvent _onSpawned;
+        [SerializeField] private UnityEvent _onWalked;
 
         private bool _spawning = false;
 
@@ -21,14 +25,16 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
             enemyObject.GetComponent<NavMeshAgent>().Disable();
             enemyObject.GetComponent<EnemyBrain>().Disable();
             
+            _onSpawned?.Invoke();
             enemyObject.transform.rotation = _origin.rotation;
             enemyObject.transform.position = _origin.position;
             enemyObject.transform
                 .DOMove(_walkTo.position, _appearDuration)
-                .SetEase(Ease.InOutCirc)
+                .SetEase(Ease.OutCirc)
                 .OnComplete(() => {
                     enemyObject.GetComponent<NavMeshAgent>().Enable();
                     enemyObject.GetComponent<EnemyBrain>().Enable();
+                    _onWalked?.Invoke();
                 });
             foreach (var enemyRenderer in enemyObject.GetComponentsInChildren<Renderer>()) {
                 Material material = enemyRenderer.material;
@@ -38,7 +44,7 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
                 transparentColor.a = 0;
 
                 material.color = transparentColor;
-                material.DOColor(solidColor, _appearDuration).SetEase(Ease.InOutCirc);
+                material.DOColor(solidColor, _appearDuration).SetEase(Ease.OutCirc);
             }
             
             enemyObject.Activate();

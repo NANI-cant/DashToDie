@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using CodeBase.Gameplay.General.Cooldowning.Impl;
+using CodeBase.Gameplay.General.Fighting.Ammunition;
 using CodeBase.ProjectContext.Services;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 namespace CodeBase.Gameplay.General.Fighting {
@@ -13,67 +16,63 @@ namespace CodeBase.Gameplay.General.Fighting {
         [SerializeField][Min(0.0000001f)] private float _delay = 0.1f;
         [SerializeField] private Vector3 _size;
         [SerializeField] private LayerMask _enemy;
-        [SerializeField] private LayerMask _obstacle;
-            
-        [SerializeField] private Transform _centerOrigin;
+
         [SerializeField] private Transform _attackOrigin;
+        [SerializeField] private Animator _animator;
+        [SerializeField] private UnityEvent _onHit;
 
         private ITimeProvider _timeProvider;
-        private float _lastAttackTime = float.NegativeInfinity;
-        private CancellationTokenSource _attackCancel;
+        private CancellationTokenSource _attackProcess;
 
-        public bool IsCharged => _attackCancel != null;
+        private Cooldown _cooldown = new(0);
+        private static readonly int AttackKey = Animator.StringToHash("Attack");
 
-        private bool IsAttackCooldownPassed => (_timeProvider.Time - _lastAttackTime) > 1 / _speed;
+        public IAmmo Ammo => null;
+        public bool IsCharging => _attackProcess != null;
+        public bool IsReloading => false;
 
         [Inject]
         public void Construct(ITimeProvider timeProvider) {
             _timeProvider = timeProvider;
         }
-
-        private void OnDestroy() {
-            Cancel();
-        }
+        
+        private void OnDestroy() => Cancel();
+        private void Update() => _cooldown?.Tick(_timeProvider.DelaTime);
 
         public void Attack() {
-            if(!IsAttackCooldownPassed || IsCharged) return;
+            if(!_cooldown.IsTimesUp || IsCharging) return;
 
-            _attackCancel = new CancellationTokenSource();
-            ExecuteAttack().Forget();
+            _attackProcess = new CancellationTokenSource();
+            ExecuteAttack(_attackProcess.Token).Forget();
         }
+
+        public void Reload() { }
 
         public void Cancel() {
-            _attackCancel?.Cancel();
+            _attackProcess?.Cancel();
+            _attackProcess?.Dispose();
+            _attackProcess = null;
         }
 
-        public bool CheckTargetInRange(Transform target) {
-            List<GameObject> enemies = new List<GameObject>(CollectEnemiesInRange());
-            return enemies.Contains(target.gameObject);
-        }
-
-        private async UniTaskVoid ExecuteAttack() {
+        private async UniTaskVoid ExecuteAttack(CancellationToken cancelToken) {
             try {
-                await UniTask.Delay((int) (_delay * 1000f), false, PlayerLoopTiming.Update, _attackCancel.Token);
+                _animator.SetTrigger(AttackKey);
+                await UniTask.Delay((int) (_delay * 1000f), cancellationToken: cancelToken);
 
                 IHurtable[] targets = FindHurtablesInRange();
-                if (targets.Length == 0) return;
+                _onHit?.Invoke();
+                DealHit(targets);
+                _cooldown = new Cooldown(1 / _speed);
+                _cooldown.WindUp();
 
-                foreach (var target in targets)
-                    target.TakeHit(_damage, out _);
-
-                _lastAttackTime = _timeProvider.Time;
+                _attackProcess?.Dispose();
+                _attackProcess = null;
             }
-            catch (OperationCanceledException) {
-                
-            }
-            finally {
-                _attackCancel?.Dispose();
-                _attackCancel = null;
-            }
+            catch (OperationCanceledException) { }
         }
 
         private IHurtable[] FindHurtablesInRange() {
-            var enemies = CollectEnemiesInRange();
+            var enemies = Physics.OverlapBox(_attackOrigin.position, _size / 2, _attackOrigin.rotation, _enemy, QueryTriggerInteraction.Collide);
 
             List<IHurtable> hurtables = new List<IHurtable>();
             foreach (var possibleHurtable in enemies) {
@@ -84,29 +83,9 @@ namespace CodeBase.Gameplay.General.Fighting {
             return hurtables.ToArray();
         }
 
-        private GameObject[] CollectEnemiesInRange() {
-            Collider[] possibleHurtables = Physics.OverlapBox(_attackOrigin.position, _size / 2, _attackOrigin.rotation, _enemy, QueryTriggerInteraction.Collide);
-            
-            List<GameObject> hurtableObjects = new();
-            foreach (var hurtableCollider in possibleHurtables) {
-                var hurtableObject = hurtableCollider.gameObject;
-                
-                var centerPosition = _centerOrigin.position;
-                var hurtablePosition = hurtableObject.transform.position;
-                
-                float distance = Vector3.Distance(centerPosition, hurtablePosition);
-                var colliderBounds = hurtableCollider.bounds;
-                Ray rayLegs = new Ray(centerPosition, centerPosition.DirectionTo(colliderBounds.center + Vector3.down * colliderBounds.extents.y));
-                Ray rayCenter = new Ray(centerPosition, centerPosition.DirectionTo(colliderBounds.center));
-                Ray rayHead = new Ray(centerPosition, centerPosition.DirectionTo(colliderBounds.center + Vector3.up * colliderBounds.extents.y));
-
-                if (!Physics.Raycast(rayLegs, distance, _obstacle, QueryTriggerInteraction.Ignore)
-                    || !Physics.Raycast(rayCenter, distance, _obstacle, QueryTriggerInteraction.Ignore)
-                    || !Physics.Raycast(rayHead, distance, _obstacle, QueryTriggerInteraction.Ignore))
-                    hurtableObjects.Add(hurtableObject);
-            }
-
-            return hurtableObjects.ToArray();
+        private void DealHit(IHurtable[] targets) {
+            foreach (var target in targets)
+                target.TakeHit(_damage, out _);
         }
 
 #if UNITY_EDITOR
@@ -120,7 +99,13 @@ namespace CodeBase.Gameplay.General.Fighting {
             Gizmos.color = Color.red;
 
             Gizmos.matrix = Matrix4x4.TRS(_attackOrigin.position, _attackOrigin.rotation, Vector3.one);
-            Gizmos.DrawWireCube(Vector3.zero, _size);            
+            if (_attackProcess == null) {
+                Gizmos.DrawWireCube(Vector3.zero, _size);    
+            }
+            else {
+                Gizmos.DrawCube(Vector3.zero, _size);
+            }
+                        
             
             Gizmos.color = Color.white;
         }

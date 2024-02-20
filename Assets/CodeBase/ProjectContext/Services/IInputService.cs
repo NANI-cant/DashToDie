@@ -4,7 +4,6 @@ using Zenject;
 
 namespace CodeBase.ProjectContext.Services {
     public interface IInputService{
-        event Action SlashCharged;
         event Action SlashCalled;
         event Action<int> SkillCalled;
         

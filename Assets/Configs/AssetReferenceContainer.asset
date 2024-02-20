@@ -115,6 +115,10 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  - m_AssetGUID: 4174fe3264fb27548aa4f544f86bd7de
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   _loadingScreen:
     m_AssetGUID: 1229bf9dc30617841a57acb097b9d405
     m_SubObjectName: 

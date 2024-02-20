@@ -4,6 +4,7 @@ namespace CodeBase.Gameplay.General.Cooldowning {
     public interface ICooldown {
         float WindUpTime { get; }
         float Reminded { get; }
+        bool IsTimesUp { get; }
 
         event Action TimesUp;
 

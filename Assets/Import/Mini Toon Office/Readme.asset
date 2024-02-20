@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 407619c5c19a54982b3880b5a085c597, type: 3}
+  iconMaxWidth: 192
+  title: Mini Toon | Office Scene
+  sections:
+  - heading: About
+    text: Toon Office Scene is a free sample that matches with Mini Toon Characters
+      packs. This scene comes with ground/wall tiles and scene props. This asset
+      is extremely light and can be used in both pc and mobile games. All models
+      use only one texture file, and allows you to customize the colors according
+      to your needs just by adjusting the material offset.
+    linkText: 
+    url: 
+  - heading: List of Models
+    text: "\nTiles: \n- 1 Ground high \n- 1 Ground low \n- 1 Ground low 2x2 \n- 1
+      Ground low 4x4 \n- 1 Ground slope \n- 1 Ground small \n- 1 Stairs \n- 1 Wall
+      \n- 1 Wall door \n- 1 Wall window \n- 1 Wall column \n- 1 Wall connect \n-
+      1 Wall corner\n\n\n Props: \n- 1 Board \n- 1 Book \n- 1 Notepad \n- 1 Cabinet
+      \n- 1 Chair \n- 1 Desk \n- 1 Cup \n- 1 Pilot pen (red) \n- 1 Pilot pen (blue)
+      \n- 1 Shelf \n- 1 Trashbin \n- 1 Vase \n- 1 Water drinker\n"
+    linkText: 
+    url: 
+  - heading: Contact/Support
+    text: 
+    linkText: Asset Store Profile
+    url: https://assetstore.unity.com/publishers/20594
+  - heading: 
+    text: 
+    linkText: 
+    url: 
+  loadedLayout: 1

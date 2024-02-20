@@ -4,6 +4,7 @@ using CodeBase.Gameplay.General;
 using CodeBase.Gameplay.Skills.Configs;
 using CodeBase.Gameplay.Skills.Configs.Impl;
 using CodeBase.Gameplay.Skills.Impl;
+using CodeBase.Gameplay.VFX;
 using CodeBase.ProjectContext.Services;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -48,7 +49,8 @@ namespace CodeBase.Gameplay.Skills.Factory.Impl {
         }
         
         private async UniTask<ISkill> Create(HyperArmorConfig config, ASkillHolder holder) {
-            return new HyperArmorSkill(config.Duration);
+            await UniTask.Yield();
+            return new HyperArmorSkill(config.Duration, holder.GetComponentInChildren<HyperArmorVfx>());
         }
     }
 }

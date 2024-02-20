@@ -1,11 +1,13 @@
-﻿using CodeBase.Gameplay.General;
+﻿using System;
+using CodeBase.Gameplay.General;
 using CodeBase.Gameplay.General.Brains;
 using CodeBase.Gameplay.Player.Signals;
 using UnityEngine;
 using Zenject;
 
 namespace CodeBase.Gameplay.Player {
-    [RequireComponent(typeof(IHealth))]
+    [RequireComponent(typeof(DeathObserver))]
+    [DisallowMultipleComponent]
     public class PlayerDeathProcessor: MonoBehaviour {
         private DeathObserver _deathObserver;
         private SignalBus _signalBus;

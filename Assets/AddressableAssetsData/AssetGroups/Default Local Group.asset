@@ -262,6 +262,93 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4174fe3264fb27548aa4f544f86bd7de
+    m_Address: Assets/Prefabs/Enemies/RifleEnemy/RifleEnemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4b0d20beef25ae4b937f22edc1f6fce
+    m_Address: Assets/Prefabs/Enemies/RifleEnemy/RifleBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67c6985106584cb489a175f22e14c7bb
+    m_Address: Assets/Import/ExplosiveLLC/Warrior Pack Bundle 2 FREE/2 Handed Warrior
+      Mecanim Animation Pack/Materials/2Handed.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 781a15e490c144941adf6440cf6b6cdd
+    m_Address: Assets/Import/ExplosiveLLC/Warrior Pack Bundle 2 FREE/2 Handed Warrior
+      Mecanim Animation Pack/Characters/2Handed.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 263f03ecc0b9fa3458fb0e360df863cb
+    m_Address: Assets/Prefabs/Player/Avatars/Sorceress/Sorceress.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4dd34e17e3cbe544cb4daf79f8610c1b
+    m_Address: Assets/Prefabs/Player/Avatars/Sorceress/Sorceress.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a26a66b2606af6d4aa71934e71e0a6f6
+    m_Address: Assets/Prefabs/Collectables/ShieldMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86cbd7382b61ccb42bb0ed9de7fb8f87
+    m_Address: Assets/Prefabs/Collectables/BoosterSpawnerMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07c065e888aa3824e939f43cef083937
+    m_Address: Assets/Prefabs/Player/HitVFX.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c159abfda643274f9214127c0ae62c3
+    m_Address: Assets/Prefabs/Player/HitVFX2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d60e7f47dbd927438ff06076d4dbd0f
+    m_Address: Assets/Prefabs/Collectables/VFX/ShieldVFX.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a81a4a3b33bca4445a5d3225aabe01d1
+    m_Address: Assets/Prefabs/Collectables/VFX/SodaVFX.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c28b22e6820a0334ea0b13f6a08e4342
+    m_Address: Assets/Prefabs/Player/Swords/Katana.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87032217fa9df694194ae9767dd1409c
+    m_Address: Assets/Prefabs/Player/Swords/Sword_Textures01.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24965d3abefa19444bc2e67583e9f5dd
+    m_Address: Assets/Materials/FakeShadowDecal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bb9a9aa7eb5737468ec00bfcb57f99a
+    m_Address: Assets/Prefabs/Map/Toon Office material.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82ab10a3f0356d44eb4751132fdee40a
+    m_Address: Assets/Prefabs/Enemies/Projectile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 2b5be7911a3536344acb0c1ab677a3a3, type: 2}
   m_SchemaSet:

@@ -9,9 +9,10 @@ namespace CodeBase.Gameplay.VFX {
         [SerializeField] private Material _material;
         [SerializeField] private SkinnedMeshRenderer[] _meshRenderers;
         [SerializeField] private Transform _centerOrigin;
+        [SerializeField] private Vector3 _rotation;
         [SerializeField] private LineRenderer _lineRenderer;
         [SerializeField] private LayerMask _obstacles;
-        
+
         private readonly List<MeshFilter> _avatarFilters = new();
         
         private Transform _avatar;
@@ -48,6 +49,7 @@ namespace CodeBase.Gameplay.VFX {
             foreach (var meshRenderer in _meshRenderers) {
                 var part = new GameObject(meshRenderer.gameObject.name);
                 part.transform.SetParent(_avatar);
+                part.transform.rotation *= Quaternion.Euler(_rotation);
 
                 var partRenderer = part.AddComponent<MeshRenderer>();
                 var partFilter = part.AddComponent<MeshFilter>();

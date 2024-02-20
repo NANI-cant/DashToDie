@@ -10,25 +10,32 @@ namespace CodeBase.Gameplay.General.Impl {
         public int HealthPoints => _healthPoints;
         
         public event Action Changed;
+        public event Action Increased;
+        public event Action Decreased;
 
         private void Start() {
             _healthPoints = _maxHealth;
             Changed?.Invoke();
+            Increased?.Invoke();
         }
 
         public void IncreaseHealth(int increasing) {
             if (increasing < 0) throw new ArgumentOutOfRangeException($"Increasing is {increasing}");
-
+            if (increasing == 0) return;
+            
             _healthPoints += increasing;
             Changed?.Invoke();
+            Increased?.Invoke();
         }
 
         public void DecreaseHealth(int decreasing) {
             if (decreasing < 0) throw new ArgumentOutOfRangeException($"Decreasing is {decreasing}");
+            if (decreasing == 0) return;
 
             _healthPoints -= decreasing;
             _healthPoints = Mathf.Max(_healthPoints, 0);
             Changed?.Invoke();
+            Decreased?.Invoke();
         }
 
 #if UNITY_EDITOR

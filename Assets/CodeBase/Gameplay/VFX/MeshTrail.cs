@@ -8,6 +8,7 @@ namespace CodeBase.Gameplay.VFX {
     public class MeshTrail: MonoBehaviour {
         [SerializeField] [Min(0f)] private float _lifeTime = 1;
         [SerializeField] [Min(0f)] private float _spacing = 0.1f;
+        [SerializeField] private Vector3 _rotation;
         [SerializeField] [GradientUsage(true)] private Gradient _headToTailColor;
         [SerializeField] private Material _material;
         [SerializeField] private SkinnedMeshRenderer[] _meshRenderers;
@@ -78,7 +79,7 @@ namespace CodeBase.Gameplay.VFX {
         }
 
         private void InitializePart(GameObject part, Vector3 position, Quaternion rotation) {
-            part.transform.SetPositionAndRotation(position, rotation);
+            part.transform.SetPositionAndRotation(position, rotation*Quaternion.Euler(_rotation));
             var partFilters = part.GetComponentsInChildren<MeshFilter>();
             
             for (int i = 0; i < _meshRenderers.Length; i++) {

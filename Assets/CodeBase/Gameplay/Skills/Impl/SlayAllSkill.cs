@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using CodeBase.Gameplay.General;
+using CodeBase.Gameplay.General.Brains;
 using CodeBase.Gameplay.Player;
 using CodeBase.Gameplay.ProgressiveValues;
 using CodeBase.Gameplay.Skills.ChargeCounters;
@@ -36,10 +37,8 @@ namespace CodeBase.Gameplay.Skills.Impl {
             vfx.transform.position = holder.transform.position;
 
             try {
-                //TODO: refactor this
-                holder.Block();
-                if (holder.TryGetComponent<Slasher>(out var slasher)) slasher.Disable();
-                //
+                holder.TryGetComponent<IBrain>(out var brain);
+                brain?.Disable();
 
                 vfx.Run(Delay.Value, Radius.Value);
                 await UniTask.Delay((int) (Delay.Value * 1000), cancellationToken: cancelToken);
@@ -51,8 +50,8 @@ namespace CodeBase.Gameplay.Skills.Impl {
             }
             finally {
                 if (holder != null) {
-                    holder.Unblock();
-                    if(holder.TryGetComponent<Slasher>(out var slasher)) slasher.Enable();    
+                    holder.TryGetComponent<IBrain>(out var brain);
+                    brain?.Enable();
                 }
             }
         }

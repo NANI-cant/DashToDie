@@ -7,11 +7,10 @@ namespace CodeBase.Gameplay.Enemies.AI {
     public class RifleEnemyBrain: EnemyBrain {
         [SerializeField] [Min(0)] private float _aimAccuracy = 0.1f;
         
+        private readonly int _movementSpeedKey = Animator.StringToHash("MovementSpeed");
+        
         private Transform _playerTarget;
         private RifleAttacker _attacker;
-
-        private bool _targetWasInRange;
-        private float _delayRemaining;
 
         [Inject]
         public void Construct(GameObject player) {
@@ -24,28 +23,33 @@ namespace CodeBase.Gameplay.Enemies.AI {
         }
 
         private void Update() {
-            bool isTargetInRange = _attacker.CheckTargetInRange(_playerTarget);
-            
-            if (!isTargetInRange) {
-                if (_targetWasInRange) _attacker.Cancel();
+            if (CheckApproachedTarget(_playerTarget) && CanSeeTarget(_playerTarget)) {
+                Agent.isStopped = true;
+                _animator.SetFloat(_movementSpeedKey, 0);
+                Rotator.Enable();
 
-                Rotator.Disable();
-                Agent.isStopped = false;
-                if (Agent.enabled) Agent.SetDestination(_playerTarget.position);
+                if (_attacker.IsReloading) return;
+                
+                Rotator.RotateToPoint(_playerTarget.position);
+
+                Vector3 directionToPlayer = Transform.position.DirectionTo(_playerTarget.position);
+                directionToPlayer.y = transform.forward.y;
+                directionToPlayer.Normalize();
+                if (transform.forward.ApproximateEqual(directionToPlayer, _aimAccuracy)) {
+                    _attacker.Attack();
+                }
+                
+                if (_attacker.Ammo.Current == 0) _attacker.Reload();
             }
             else {
-                Agent.isStopped = true;
-                Rotator.Enable();
-                Rotator.RotateToPoint(_playerTarget.position);
-                
-                Vector3 directionToPlayer = transform.position.DirectionTo(_playerTarget.position);
-                directionToPlayer.y = transform.forward.y;
-                if (transform.forward.ApproximateEqual(directionToPlayer, _aimAccuracy)) {
-                    _attacker.Attack();   
-                }
-            }
+                if(_attacker.IsCharging || _attacker.IsReloading) return;
 
-            _targetWasInRange = isTargetInRange;
+                Rotator.Disable();
+                _attacker.Cancel();
+                Agent.isStopped = false;
+                _animator.SetFloat(_movementSpeedKey, 1);
+                if (Agent != null) Agent.SetDestination(_playerTarget.position);
+            }
         }
     }
 }

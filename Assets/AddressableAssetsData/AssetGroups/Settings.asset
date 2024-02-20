@@ -17,11 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 77cba96bb26eb584f96cf819071a210b
   m_SerializeEntries:
-  - m_GUID: a6560a915ef98420e9faacc1c7438823
-    m_Address: Assets/Settings/SampleSceneProfile.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7b7fd9122c28c4d15b667c7040e3b3fd
     m_Address: Assets/Settings/URP-HighFidelity.asset
     m_ReadOnly: 0

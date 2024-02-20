@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace CodeBase.Gameplay.General {
     [RequireComponent(typeof(IHealth))]
+    [DisallowMultipleComponent]
     public sealed class DeathObserver : MonoBehaviour {
         private IHealth _health;
 

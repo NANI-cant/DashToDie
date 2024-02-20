@@ -60,6 +60,8 @@ namespace CodeBase.Architecture.Installers {
                 .OptionalSubscriber();
             Container.DeclareSignal<PlayerDiedSignal>()
                 .OptionalSubscriber();
+            Container.DeclareSignal<PlayerHurtedSignal>()
+                .OptionalSubscriber();
         }
     }
 }

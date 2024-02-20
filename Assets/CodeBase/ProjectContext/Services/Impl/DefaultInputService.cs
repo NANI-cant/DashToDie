@@ -4,7 +4,6 @@ using Zenject;
 
 namespace CodeBase.ProjectContext.Services.Impl {
     public class DefaultInputService : IInputService, ITickable{
-        public event Action SlashCharged;
         public event Action SlashCalled;
         
         public event Action<int> SkillCalled;
@@ -18,7 +17,6 @@ namespace CodeBase.ProjectContext.Services.Impl {
             HandleSkills();
 
             Charging = Input.GetMouseButton(0);
-            if(Input.GetMouseButtonDown(0)) SlashCharged?.Invoke();
             if(Input.GetMouseButtonUp(0)) SlashCalled?.Invoke();
 
             MoveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;

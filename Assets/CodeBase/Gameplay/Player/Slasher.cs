@@ -7,6 +7,8 @@ using CodeBase.Gameplay.VFX;
 using CodeBase.ProjectContext.Services;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.Events;
 using Zenject;
 
 namespace CodeBase.Gameplay.Player {
@@ -25,6 +27,9 @@ namespace CodeBase.Gameplay.Player {
         [SerializeField] private Transform _slashOrigin;
         [SerializeField] private LayerMask _obstacles;
         [SerializeField] private LayerMask _enemies;
+
+        [Header("Events")] 
+        [SerializeField] private UnityEvent<Vector3> _onHit;
 
         private ITimeProvider _time;
         private IFixedTimeProvider _fixedTime;
@@ -166,6 +171,7 @@ namespace CodeBase.Gameplay.Player {
                 if(hurtOnSlashCache.Contains(hurtable)) continue;
                 
                 hurtable.TakeHit(_damageDealer.Damage.Value, out _);
+                _onHit?.Invoke(hurtableCollider.transform.position + Vector3.up * 0.5f);
                 hurtOnSlashCache.Add(hurtable);
             }
         }

@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2228912413263767605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.426, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalPosition: {x: 0, y: 0.3942, z: 0}
+  m_LocalScale: {x: 0.3864263, y: 0.3864263, z: 0.3864263}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2604571516417848643}
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bbffd62ab4f9f51408b9adfb530c1dec, type: 2}
+  - {fileID: 2100000, guid: a26a66b2606af6d4aa71934e71e0a6f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2604571516417848643}
   - component: {fileID: -8483018407560840551}
+  - component: {fileID: 4860357369713041281}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -128,3 +129,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202557bfc4854b4ab8dd5d03320ef72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onApply:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4860357369713041281}
+        m_TargetAssemblyTypeName: CodeBase.Gameplay.VFX.Boosters.ShieldVfxFactory,
+          Assembly-CSharp
+        m_MethodName: Create
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4860357369713041281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750155996537599010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbaf3225e7a4560801f391dd7ea50a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vfxAsset:
+    m_AssetGUID: 5d60e7f47dbd927438ff06076d4dbd0f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

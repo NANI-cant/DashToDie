@@ -7,8 +7,8 @@ namespace CodeBase.Gameplay.Environment.Collectables.Boosters {
         [SerializeField] [Min(1)] private int _charges = 1;
 
         public void Apply(GameObject target) {
-            var targetSkill = GetTargetSkill(target.GetComponent<PlayerSkillHolder>()); 
-            targetSkill.ChargeCounter.Charges++;
+            var targetSkill = GetTargetSkill(target.GetComponent<PlayerSkillHolder>());
+            targetSkill.ChargeCounter.Charges += _charges;
         }
 
         protected abstract ISkill GetTargetSkill(ASkillHolder skillHolder);
