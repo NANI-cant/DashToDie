@@ -40,11 +40,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5071685340082176
-    m_Key: SlasherChargeSpeedStat
+    m_Key: SlasherStaminaPriceStat
     m_Metadata:
       m_Items: []
   - m_Id: 5071689769267200
     m_Key: SlasherRecoveryStat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516799659520000
+    m_Key: SlayAllDelayStat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516841942298624
+    m_Key: SlayAllRadiusStat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516873370218496
+    m_Key: StaminaAmountStat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516918861639680
+    m_Key: StaminaRegenStat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519772317954048
+    m_Key: BaseStats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519889209012224
+    m_Key: SlayAllSkillStats
     m_Metadata:
       m_Items: []
   m_Metadata:

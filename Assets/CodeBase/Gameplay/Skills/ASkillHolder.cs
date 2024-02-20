@@ -40,8 +40,8 @@ namespace CodeBase.Gameplay.Skills {
             return _skillsById[id];
         }
 
-        public ISkill GetSkill<TSkill>() where TSkill: ISkill{
-            return _skillsByType[typeof(TSkill)];
+        public TSkill GetSkill<TSkill>() where TSkill: ISkill{
+            return (TSkill) _skillsByType[typeof(TSkill)];
         }
 
         public void Cancel() {

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd3348c023349b28c76d95dea714366, type: 3}
-  m_Name: SlasherRecoveryStat
+  m_Script: {fileID: 11500000, guid: e16206b788594cdf9173001e337aec0c, type: 3}
+  m_Name: SlasherStaminaPriceStat
   m_EditorClassIdentifier: 
   _multiplierPerLevel: 0.005
   _level: 0
@@ -19,7 +19,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:721c65165362a8744bf727501db36a82
     m_TableEntryReference:
-      m_KeyId: 5071689769267200
+      m_KeyId: 5071685340082176
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

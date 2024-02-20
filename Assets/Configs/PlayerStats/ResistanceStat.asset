@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dace0c390d9c406cb8523e2e3aa862ce, type: 3}
   m_Name: ResistanceStat
   m_EditorClassIdentifier: 
-  _multiplierPerLevel: 0
+  _multiplierPerLevel: 0.005
   _level: 0
+  _maxLevel: 100
   _localizedString:
     m_TableReference:
       m_TableCollectionName: GUID:721c65165362a8744bf727501db36a82

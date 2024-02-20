@@ -9,17 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd3348c023349b28c76d95dea714366, type: 3}
-  m_Name: SlasherRecoveryStat
+  m_Script: {fileID: 11500000, guid: 127ededa67a04e91a12317479861b2bf, type: 3}
+  m_Name: SlayAllRadiusStat
   m_EditorClassIdentifier: 
-  _multiplierPerLevel: 0.005
+  _multiplierPerLevel: 0.01
   _level: 0
   _maxLevel: 100
   _localizedString:
     m_TableReference:
       m_TableCollectionName: GUID:721c65165362a8744bf727501db36a82
     m_TableEntryReference:
-      m_KeyId: 5071689769267200
+      m_KeyId: 19516841942298624
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14aa8b8a8e94e45a0861db9dcfef6bc, type: 3}
   m_Name: DamageStat
   m_EditorClassIdentifier: 
-  _multiplierPerLevel: 0
+  _multiplierPerLevel: 0.02
   _level: 0
   _maxLevel: 100
   _localizedString:

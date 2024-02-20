@@ -15,6 +15,7 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
         [SerializeField] private UnityEvent _onWalked;
 
         private bool _spawning = false;
+        private Sequence _spawnTweenSequence;
 
         public bool IsPointFree => Physics.OverlapBoxNonAlloc(_walkTo.position + Vector3.up * 0.5f, Vector3.one / 2.25f, new Collider[1]) == 0 && !_spawning;
 
@@ -28,7 +29,12 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
             _onSpawned?.Invoke();
             enemyObject.transform.rotation = _origin.rotation;
             enemyObject.transform.position = _origin.position;
-            enemyObject.transform
+
+            _spawnTweenSequence?.Complete();
+            _spawnTweenSequence?.Kill();
+            _spawnTweenSequence = DOTween.Sequence();
+            
+            Tween enemyWalkTween = enemyObject.transform
                 .DOMove(_walkTo.position, _appearDuration)
                 .SetEase(Ease.OutCirc)
                 .OnComplete(() => {
@@ -36,6 +42,8 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
                     enemyObject.GetComponent<EnemyBrain>().Enable();
                     _onWalked?.Invoke();
                 });
+            _spawnTweenSequence.Insert(0, enemyWalkTween);
+            
             foreach (var enemyRenderer in enemyObject.GetComponentsInChildren<Renderer>()) {
                 Material material = enemyRenderer.material;
                 
@@ -44,7 +52,7 @@ namespace CodeBase.Gameplay.Enemies.Spawners {
                 transparentColor.a = 0;
 
                 material.color = transparentColor;
-                material.DOColor(solidColor, _appearDuration).SetEase(Ease.OutCirc);
+                _spawnTweenSequence.Insert(0, material.DOColor(solidColor, _appearDuration).SetEase(Ease.OutCirc));
             }
             
             enemyObject.Activate();

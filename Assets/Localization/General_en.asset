@@ -43,11 +43,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5071685340082176
-    m_Localized: charge speed
+    m_Localized: stamina price
     m_Metadata:
       m_Items: []
   - m_Id: 5071689769267200
     m_Localized: recovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516799659520000
+    m_Localized: delay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516841942298624
+    m_Localized: radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516873370218496
+    m_Localized: stamina amount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19516918861639680
+    m_Localized: stamina regeneration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519772317954048
+    m_Localized: Base
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19519889209012224
+    m_Localized: Slay All Skill
     m_Metadata:
       m_Items: []
   references:
