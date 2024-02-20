@@ -1,6 +1,7 @@
 # Dash to Die
 + [Видео геймплея](https://youtu.be/1bwlq56zYts)
-+ ![Image](gif.gif)
+  
+![Image](gmeplayGif.gif)
 
 # Описание технической части
 Для разработки использовался игровой движок Unity версии 2022.3.0f1
